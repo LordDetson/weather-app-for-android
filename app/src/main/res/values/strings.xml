@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="city_weather">City weather</string>
+    <string name="city_name">City name</string>
+    <string name="weather">Weather</string>
+    <string name="city_name_is_empty">City name is empty. Please enter city name.</string>
+</resources>

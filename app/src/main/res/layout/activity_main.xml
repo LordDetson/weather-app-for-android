@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wet_asphalt"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:text="@string/city_weather"
+        android:textAlignment="center"
+        android:textColor="@color/light_gray"
+        android:textSize="30sp"
+        android:layout_marginTop="50sp"/>
+
+    <EditText
+        android:id="@+id/cityNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="100sp"
+        android:backgroundTint="@color/light_gray"
+        android:ems="10"
+        android:hint="@string/city_name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="@color/light_gray"
+        android:textColorHint="@color/light_gray"
+        android:importantForAutofill="no"/>
+
+    <Button
+        android:id="@+id/weatherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityNameField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:text="@string/weather" />
+
+    <TextView
+        android:id="@+id/weatherResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherButton"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:textAlignment="center"
+        android:textColor="@color/light_gray"
+        android:textSize="25sp" />
+</RelativeLayout>
